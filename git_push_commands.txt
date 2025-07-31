@@ -1,0 +1,20 @@
+# Git commands to push your Pomodoro project to GitHub
+# Run these commands in order in your terminal/command prompt
+
+# 1. Initialize git repository (if not already done)
+git init
+
+# 2. Add the remote repository
+git remote add origin https://github.com/Sho14-trade/pomodoro.git
+
+# 3. Add all files to staging
+git add .
+
+# 4. Commit the changes
+git commit -m "Initial commit: Pomodoro timer web application"
+
+# 5. Push to GitHub (main branch)
+git push -u origin main
+
+# Alternative if the default branch is master:
+# git push -u origin master

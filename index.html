@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポモドーロタイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍅 ポモドーロタイマー</h1>
+        
+        <div class="timer-container">
+            <div class="timer-circle">
+                <svg class="progress-ring" width="200" height="200">
+                    <circle class="progress-ring-circle" cx="100" cy="100" r="90"></circle>
+                </svg>
+                <div class="timer-display">
+                    <span id="time-display">25:00</span>
+                    <span id="session-type">作業時間</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="btn primary">開始</button>
+            <button id="pause-btn" class="btn secondary" disabled>一時停止</button>
+            <button id="reset-btn" class="btn secondary">リセット</button>
+        </div>
+
+        <div class="session-info">
+            <div class="session-counter">
+                <span>完了セッション: </span>
+                <span id="session-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
